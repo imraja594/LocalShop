@@ -1,0 +1,148 @@
+:root{
+	--primaryclr:#000;
+	--secondaryclr:#fff;
+	--buthover:#00000033;
+	--hoverborder:#ffffff2e;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+.bg-white {
+    background-color: var(--secondaryclr)!important;
+}
+.choose {
+    margin: 7px 0 15px;
+}
+.mar {
+    margin-top: 45px;
+}
+.mt-3, .my-3 {
+    margin-top: 0px!important;
+}
+.form-control {
+    font-size: 13px !important;
+    margin-bottom: 16px;
+}
+img.rounded-circle.mt-5 {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+}
+.mt-5, .my-5 {
+    margin-top: 40px!important;
+}
+.form-control:focus {
+    box-shadow: none;
+   
+}
+
+.profile-button {
+    background: var(--primaryclr);
+    box-shadow: none;
+    border: none;
+    margin-bottom: 50px;
+}
+.btn {
+ font-weight: 600;
+    padding: 14px 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.profile-button:hover {
+    color: var(--primaryclr);
+    background: var(--buthover);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 10px) !important;
+    border: 2px solid var(--hoverborder);
+    transition: 0.8s;
+}
+
+.profile-button:focus {
+    background:  var(--primaryclr);
+    box-shadow: none;
+     color: var(--secondaryclr);
+}
+
+.profile-button:active {
+    background:  var(--primaryclr);
+    box-shadow: none;
+     color: var(--secondaryclr);
+}
+
+.back:hover {
+  color: var(--secondaryclr);
+    cursor: pointer
+}
+
+.labels {
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    float: left;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: var(--secondaryclr);
+    background-color: var(--primaryclr);
+	border-color: var(--primaryclr);
+}
+input#homepage {
+    width: 100%;
+    float: left;
+}
+input#homepage1 {
+    width: 100%;
+    float: left;
+}
+input#homepage2 {
+    width: 100%;
+    float: left;
+}
+p {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 12px;
+}
+.text-right {
+    text-align: left!important;
+}
+
+
+
+@media (max-width:767px){
+	
+input#homepage {
+    margin-left: 1px;
+	    margin-top: 10px;
+    margin-bottom: 10px;
+}	
+input#homepage1 {
+    margin-left: 1px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}	
+input#homepage2 {
+    margin-left: 1px;
+	    margin-top: 10px;
+    margin-bottom: 10px;
+}	
+.mar {
+    margin-top: 0;
+}	
+.p-3 {
+    padding: 14px 10px 0! important;
+}	
+	
+	
+}

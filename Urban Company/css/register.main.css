@@ -1,0 +1,247 @@
+:root{
+	--primaryclr:#000;
+	--secondaryclr:#fff;
+	--buthover:#00000033;
+	--hoverborder:#ffffff2e;
+
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: var(--primaryclr);
+    font-weight: normal;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform textarea {
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--grayclr);
+    background-color: var(--bodyclr);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #673AB7;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 100px;
+    background: var(--primaryclr);
+    font-weight: bold;
+    position: inherit;
+    color: var(--secondaryclr);
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+    /* bottom: 0; */
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {color: var(--primaryclr);background: rgb(0 0 0 / 20%);backdrop-filter: blur( 4px );-webkit-backdrop-filter: blur( 10px) !important;border: 2px solid rgba( 255, 255, 255, 0.18 );transition: 0.8s;}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: var(--primaryclr);
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.purple-text {
+    color: var(--primaryclr);
+    font-weight: normal;
+}
+
+.steps {
+    font-size: 25px;
+    color: var(--grayclr);
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.fieldlabels {
+    color: var(--grayclr);
+    text-align: left;
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: var(--primaryclr);
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: var(--secondaryclr);
+    background: var(
+    --grayclr);
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--grayclr);
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: var(--primaryclr);
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: var(--primaryclr);
+
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+@media (max-width:767px){
+	
+	#heading {
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+	.steps {
+    font-size: 17px;
+}
+	.fs-title {
+    font-size: 17px;
+}
+	.purple-text {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+}
+}
+
